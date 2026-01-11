@@ -382,7 +382,7 @@ textarea {
 /* Bottom Navigation */
 .bottom-nav {
     position: fixed;
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     right: 0;
     background: var(--card);
@@ -392,6 +392,7 @@ textarea {
     padding: 8px;
     z-index: 1000;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
+    
 }
 
 .nav-item {
@@ -1006,4 +1007,17 @@ textarea {
 .checkbox-row span {
     width: auto !important;
     margin: 0;
+}
+
+.app-footer {
+    position: fixed;
+    bottom: 1px;          /* sits in the gap */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    text-align: center;
+    color: #eeececc6;
+    opacity: 0.85;
+    z-index: 999;
+    pointer-events: none; /* optional */
 }
